@@ -1,0 +1,399 @@
+#hero {
+    height: 1000px ;
+    background-image:url(CleanShineDAG.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #hero-content {
+    width: 900px;
+    background-blend-mode: normal;
+    border-radius: 8px;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+  }
+  
+  #hero-content h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 55px;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+  }
+  
+  #hero-content p {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
+  
+  #hero-content a {
+    text-decoration: none;
+    background-color: #0d3b66;
+    padding: 12px 24px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  }
+  
+  #hero-content a:hover {
+    background-color: #1da1fd;
+  }
+
+  #highlights {
+    padding: 24px;
+    background: linear-gradient(0deg, #1da1fd);
+  }
+  
+  #highlights h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    color: #0d3b66;
+    margin: 24px 0px;
+  }
+  
+  #destinations {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  
+  .destination {
+    margin: 0 20px;
+    text-transform: uppercase;
+    width: 25%;
+  }
+  
+  .destination p {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 25px;
+    color: #0d3b66;
+    margin: 24px 0;
+  }
+
+  #destination a {
+    text-decoration: none;
+    background-color: #1da1fd;
+    padding: 12px 24px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  }
+
+  #destination a:hover {
+    background-color: #1da1fd;
+  }
+
+  span {
+    color: #1da1fd;
+}
+
+/*---------- campus ---------*/
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.campus{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus p{
+  font-size: 25px;
+  font-weight: 300;
+}
+.campus h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+.campus h2{
+  font-size: 30px;
+  font-weight: 500;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: #1da1fd;
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;     /*------sitais pavelk nosaukumu uz vidu, mainot procentus var nolikt kura vieta velos nosaukumu------*/
+    opacity: 1;
+}
+
+.btn-primary {
+  padding: 14px 35px;
+  background: linear-gradient(135deg,#1da1fd,#1da1fd);
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+/*------ call to action --------*/
+
+.cta{
+    margin: 100px auto;
+    width: 90%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(CleanShineName.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #1da1fd;
+    background: #1da1fd;
+    transition: 1s;
+}
+
+/*------ atsauksmes --------*/
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    color: #000000;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.review-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.stars {
+    color: #f5b301;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.review-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.review-author {
+    font-weight: bold;
+    color: #1da1fd;
+}
+
+/*------ kpc --------*/
+
+.why-us {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1da1fd, #1da1fd);
+    color: #fff;
+}
+
+.containers {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.containers h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.intro {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
+    opacity: 0.95;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.feature {
+    background: #ffffff;
+    color: #0d3b66;
+    padding: 25px 30px;
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    font-size: 16px;
+    line-height: 1.6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+.feature strong {
+    color: #1da1fd;
+}
+
+
+/* ===== CleanShineDAG Premium Floating Button ===== */
+
+.fab-top {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* CleanShineDAG gradient */
+  background: linear-gradient(135deg, #1da1fd, #0d3b66);
+
+  box-shadow: 0 15px 35px rgba(13, 59, 102, 0.35);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px) scale(0.95);
+  transition: all 0.3s ease;
+}
+
+/* Parādās */
+.fab-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+/* SVG bulta */
+.fab-top svg {
+  width: 26px;
+  height: 26px;
+  fill: white;
+}
+
+/* Hover efekts */
+.fab-top:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 20px 45px rgba(29, 161, 253, 0.5);
+}
+
+/* Klikšķa efekts */
+.fab-top:active {
+  transform: scale(0.95);
+}
+
+/* Mobilajai versijai */
+@media (max-width: 768px) {
+  .fab-top {
+    width: 65px;
+    height: 65px;
+    right: 18px;
+    bottom: 18px;
+  }
+}
