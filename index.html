@@ -16,12 +16,14 @@
         <a href="index.html">Clean<span>Shine</span>D<span>A</span>G</a>
       </div>
       <nav>
-        <ul>
-          <li><a href="Variante.html">Variante</a></li>
-          <li><a href="contactus.html">Kontakt</a></li>
-          <li><a href="aboutus.html">Über Uns</a></li>
-        </ul>
-      </nav>
+      <ul>
+        <li><a href="Variante.html">Variante</a></li>
+        <li><a href="contactus.html">Kontakt</a></li>
+        <li><a href="aboutus.html">Über Uns</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+      </ul>
+    </nav>
     </header>
     <main>
       <section id="hero">
@@ -42,19 +44,19 @@
         <h2>Zum Beispiel bieten wir an:</h2>
         <div class="row">
             <div class="campus-col">
-                <img src="/Images/Büroreinigung.jpg">
+                <img src="images/Büroreinigung.jpg">
                 <div class="layer">
                     <h3>BÜROREINIGUNG</h3>
                 </div>
             </div>
             <div class="campus-col">
-                <img src="/Images/Treppenhausreinigung.jpg">
+                <img src="images/Treppenhausreinigung.jpg">
                 <div class="layer">
                     <h3>TREPPENHAUS<br>REINIGUNG</h3>
                 </div>
             </div>
             <div class="campus-col">
-                <img src="/Images/Wohnungsreinigung.jpg">
+                <img src="images/Wohnungsreinigung.jpg">
                 <div class="layer">
                     <h3>WOHNUNGS<br>REINIGUNG</h3>
                 </div>
@@ -141,22 +143,26 @@
     <footer>
       <ul>
         <li>
-          <a href="https://www.instagram.com/cleanshinedag_/">
-            <img src="/Images/icons/insta.png" alt="Instagram logo"
+          <a href="https://www.instagram.com/cleanshineag.sn?igsh=cjZyMjA4N2s4bWNh&utm_source=qr">
+            <img src="/Users/edgarsg/Desktop/Istais Projekts/Images/icons/insta.png" alt="Instagram logo"
           /></a>
         </li>
         <li>
           <a href="https://www.facebook.com/profile.php?id=61586636996825">
-            <img src="/Images/icons/facebook.png" alt="Facebook logo"
+            <img src="/Users/edgarsg/Desktop/Istais Projekts/Images/icons/facebook.png" alt="Facebook logo"
           /></a>
         </li>
         <li>
-          <a href="https://www.tiktok.com/@cleanshinedag">
-            <img src="/Images/icons/tiktok.png" alt="Tiktok logo"
+          <a href="https://www.tiktok.com/@cleanshineag">
+            <img src="/Users/edgarsg/Desktop/Istais Projekts/Images/icons/tiktok.png" alt="Tiktok logo"
           /></a>
         </li>
         
       </ul>
+      <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
     </footer>
     
     <button id="scrollTopBtn" class="fab-top" aria-label="Nach oben scrollen">
@@ -165,17 +171,23 @@
   </svg>
 </button>
 
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;width:100%;background:#222;color:#fff;padding:15px;text-align:center;z-index:9999;">
+  Diese Website verwendet Cookies und externe Dienste wie Instagram und Google Maps.
+  <a href="datenschutz.html" style="color:#fff;text-decoration:underline;">Mehr erfahren</a>
+  <button onclick="acceptCookies()" style="margin-left:10px;">Akzeptieren</button>
+</div>
+
 <script>
-  const scrollBtn = document.getElementById("scrollTopBtn");
+function acceptCookies() {
+  document.getElementById("cookie-banner").style.display = "none";
+  localStorage.setItem("cookiesAccepted", "true");
+}
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 320) scrollBtn.classList.add("show");
-    else scrollBtn.classList.remove("show");
-  });
-
-  scrollBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+window.addEventListener("load", function() {
+  if (localStorage.getItem("cookiesAccepted") === "true") {
+    document.getElementById("cookie-banner").style.display = "none";
+  }
+});
 </script>
 </body>
 </html>
