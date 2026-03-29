@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="alternate" hreflang="de" href="https://example.com/">
-    <link rel="stylesheet" href="ContactUsstyles.css" />
-    <title>Kontakt</title>
-  </head>
-  <body>
-    <header>
-      <div id="page-logo">
-        <a href="index.html">Clean<span>Shine</span>D<span>A</span>G</a>
-      </div>
-      <nav>
-      <nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="alternate" hreflang="de" href="https://example.com/">
+  <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="ContactUsstyles.css" />
+  <title>Kontakt - CleanShineDAG</title>
+</head>
+<body>
+
+  <header>
+    <div id="page-logo">
+      <a href="index.html">Clean<span>Shine</span>D<span>A</span>G</a>
+    </div>
+    <nav>
       <ul>
         <li><a href="Variante.html">Variante</a></li>
         <li><a href="contactus.html">Kontakt</a></li>
@@ -24,90 +26,115 @@
         <li><a href="datenschutz.html">Datenschutz</a></li>
       </ul>
     </nav>
-    </header>
-    <main>
-      
-      <div class="contact-wrapper">
+  </header>
 
-    <!-- Karte pa kreisi -->
-    <section class="location">
+  <main>
+    <section class="contact-hero">
+      <h1>Kontakt</h1>
+      <p>Wir freuen uns auf Ihre Anfrage und erstellen Ihnen gerne ein unverbindliches Angebot.</p>
+    </section>
+
+    <div class="contact-wrapper">
+
+      <section class="location">
         <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4729.66657911936!2d11.378557512425983!3d53.64994467226374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47addbcafb7371eb%3A0x5fa6f0bf99aaf102!2sZiegeleiweg%2011%2C%2019057%20Schwerin!5e0!3m2!1sen!2sde!4v1770557536747!5m2!1sen!2sde"
-            allowfullscreen=""
-            loading="lazy">
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4729.66657911936!2d11.378557512425983!3d53.64994467226374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47addbcafb7371eb%3A0x5fa6f0bf99aaf102!2sZiegeleiweg%2011%2C%2019057%20Schwerin!5e0!3m2!1sen!2sde!4v1770557536747!5m2!1sen!2sde"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-    </section>
+      </section>
 
-    <!-- Info pa labi -->
-    <section class="contact-us">
+      <section class="contact-us">
         <div class="contact-box">
+          <h2>Unsere Kontaktdaten</h2>
 
-            <h2>Kontakt</h2>
-
-            <div class="contact-item">
-                <i class="fa fa-home"></i>
-                <div>
-                    <h5>Ziegeleiweg 11, 19057</h5>
-                    <p>Schwerin, Deutschland</p>
-                </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h5>Ziegeleiweg 11, 19057</h5>
+              <p>Schwerin, Deutschland</p>
             </div>
+          </div>
 
-            <div class="contact-item">
-                <i class="fa fa-user"></i>
-                <div>
-                    <h5>Dana Ance Gintere</h5>
-                    <p>+49 1520 4477644</p>
-                    <p>Montag–Freitag: 07:00–19:00<br>
-                       Samstag: 07:00–15:00</p>
-                </div>
+          <div class="contact-item">
+            <div class="contact-icon">👤</div>
+            <div>
+              <h5>Dana Ance Gintere</h5>
+              <p>+49 1520 4477644</p>
+              <p>Montag–Freitag: 07:00–19:00<br>Samstag: 07:00–15:00</p>
             </div>
+          </div>
 
-            <div class="contact-item">
-                <i class="fa fa-envelope-o"></i>
-                <div>
-                    <h5>cleanshineag@gmail.com</h5>
-                    <p>Email uns eure Wünsche</p>
-                </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <h5>cleanshineag@gmail.com</h5>
+              <p>Schreiben Sie uns Ihre Wünsche</p>
             </div>
-
+          </div>
         </div>
-    </section>
+      </section>
 
-</div>
-
-<section class="nosaukums">
-  <h2>Kontaktieren Sie uns für ein unverbindliches Angebot</h2>
-</section>
-            <div class="contact-col">
-                <div>
-                   <form action="form-handler.php" method="post">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email adresse" required>
-                    <input type="text" name="subject" placeholder="Thema" required>
-                    <textarea rows="8" name="message" placeholder="Nachricht" required></textarea>
-
-                    <label style="display:block; margin:15px 0; font-size:14px; line-height:1.5;">
-                    <input type="checkbox" required>
-                    Ich habe die
-                    <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a>
-                    gelesen und akzeptiert.
-                    </label>
-
-                    <button type="submit" class="hero-btn">Senden</button>
-                   </form>
-                </div>
-            </div>
-        </div>
-    </section>
-            
-    </main>
-    <div id="cookie-banner" style="position:fixed;bottom:0;left:0;width:100%;background:#222;color:#fff;padding:15px;text-align:center;z-index:9999;">
-      Diese Website verwendet Cookies und externe Dienste wie Instagram und Google Maps.
-      <a href="datenschutz.html" style="color:#fff;text-decoration:underline;">Mehr erfahren</a>
-      <button onclick="acceptCookies()" style="margin-left:10px;">Akzeptieren</button>
     </div>
 
-    <script>
+    <section class="contact-form-section">
+      <div class="form-container">
+        <h2>Kontaktieren Sie uns für ein unverbindliches Angebot</h2>
+
+        <form action="form-handler.php" method="post">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="E-Mail-Adresse" required>
+          <input type="text" name="subject" placeholder="Thema" required>
+          <textarea rows="8" name="message" placeholder="Nachricht" required></textarea>
+
+          <label class="form-consent">
+            <input type="checkbox" required>
+            <span>
+              Ich habe die
+              <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a>
+              gelesen und akzeptiert.
+            </span>
+          </label>
+
+          <button type="submit" class="hero-btn">Senden</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <ul>
+      <li>
+        <a href="https://www.instagram.com/cleanshineag.sn?igsh=cjZyMjA4N2s4bWNh&utm_source=qr">
+          <img src="Images/icons/insta.png" alt="Instagram logo" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/profile.php?id=61586636996825">
+          <img src="Images/icons/facebook.png" alt="Facebook logo" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.tiktok.com/@cleanshineag">
+          <img src="Images/icons/tiktok.png" alt="Tiktok logo" />
+        </a>
+      </li>
+    </ul>
+
+    <div class="footer-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </footer>
+
+  <div id="cookie-banner">
+    Diese Website verwendet Cookies und externe Dienste wie Google Maps.
+    <a href="datenschutz.html">Mehr erfahren</a>
+    <button onclick="acceptCookies()">Akzeptieren</button>
+  </div>
+
+  <script>
     function acceptCookies() {
       document.getElementById("cookie-banner").style.display = "none";
       localStorage.setItem("cookiesAccepted", "true");
@@ -118,31 +145,7 @@
         document.getElementById("cookie-banner").style.display = "none";
       }
     });
-    </script>
-  </body>
-      <footer>
-      <ul>
-        <li>
-          <a href="https://www.instagram.com/cleanshineag.sn?igsh=cjZyMjA4N2s4bWNh&utm_source=qr">
-            <img src="Images/icons/insta.png" alt="Instagram logo"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/profile.php?id=61586636996825">
-            <img src="Images/icons/facebook.png" alt="Facebook logo"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.tiktok.com/@cleanshineag">
-            <img src="Images/icons/tiktok.png" alt="Tiktok logo"
-          /></a>
-        </li>
-        
-      </ul>
+  </script>
 
-      <div class="footer-links">
-        <a href="impressum.html">Impressum</a>
-        <a href="datenschutz.html">Datenschutz</a>
-      </div>
-    </footer>
+</body>
 </html>
