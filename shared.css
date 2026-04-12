@@ -426,3 +426,17 @@ body.legal-bg {
     margin: 6px 10px;
   }
 }
+
+@media (max-width: 768px) {
+  footer ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+  }
+
+  footer li {
+    width: 48px;
+    height: 48px;
+  }
+}
