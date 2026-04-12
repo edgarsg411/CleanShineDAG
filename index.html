@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="shared.css" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="alternate" hreflang="de" href="https://example.com/">
+  <link rel="alternate" hreflang="de" href="https://cleanshinedag.de/">
   <title>CleanShineDAG</title>
 </head>
 <body>
@@ -114,9 +114,6 @@
       </div>
     </section>
 
-    <script src="https://elfsightcdn.com/platform.js" async></script>
-    <div class="elfsight-app-4bb69bca-e78c-4fe9-bb01-5856b07eb0b8" data-elfsight-app-lazy></div>
-
     <section class="why-us">
       <div class="containers">
         <h2>Warum CleanShineDAG?</h2>
@@ -169,7 +166,7 @@
     </div>
   </footer>
 
-  <button id="scrollTopBtn" class="fab-top" aria-label="Nach oben scrollen">
+  <button type="button" id="scrollTopBtn" class="fab-top" aria-label="Nach oben scrollen">
     <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
       <path d="M12 5l-7 7 1.41 1.41L11 8.83V19h2V8.83l4.59 4.58L19 12z"></path>
     </svg>
@@ -178,10 +175,31 @@
   <div id="cookie-banner">
     Diese Website verwendet Cookies und externe Dienste wie Instagram und Google Maps.
     <a href="datenschutz.html">Mehr erfahren</a>
-    <button onclick="acceptCookies()">Akzeptieren</button>
+    <button id="acceptCookiesBtn">Akzeptieren</button>
   </div>
 
   <script>
+    function loadExternalContent() {
+  const script = document.createElement("script");
+  script.src = "https://elfsightcdn.com/platform.js";
+  script.async = true;
+  document.body.appendChild(script);
+}
+
+// kad pieņem cookies
+function acceptCookies() {
+  document.getElementById("cookie-banner").style.display = "none";
+  localStorage.setItem("cookiesAccepted", "true");
+  loadExternalContent();
+}
+
+// ja jau pieņemts iepriekš
+window.addEventListener("load", function() {
+  if (localStorage.getItem("cookiesAccepted") === "true") {
+    document.getElementById("cookie-banner").style.display = "none";
+    loadExternalContent();
+  }
+});
     const scrollBtn = document.getElementById("scrollTopBtn");
 
     window.addEventListener("scroll", () => {
@@ -196,6 +214,8 @@
     function acceptCookies() {
       document.getElementById("cookie-banner").style.display = "none";
       localStorage.setItem("cookiesAccepted", "true");
+      document.getElementById("acceptCookiesBtn")
+  .addEventListener("click", acceptCookies);
     }
 
     window.addEventListener("load", function() {
