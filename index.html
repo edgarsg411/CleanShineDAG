@@ -211,12 +211,6 @@ window.addEventListener("load", function() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-    function acceptCookies() {
-      document.getElementById("cookie-banner").style.display = "none";
-      localStorage.setItem("cookiesAccepted", "true");
-      document.getElementById("acceptCookiesBtn")
-  .addEventListener("click", acceptCookies);
-    }
 
     window.addEventListener("load", function() {
       if (localStorage.getItem("cookiesAccepted") === "true") {
